@@ -1,0 +1,32 @@
+:root {
+	--border: rgb(70, 157, 177);
+	--text: rgb(247, 242, 242);
+	--hover: #fff;
+	--color-bg-dark: rgb(24, 23, 23);
+	--slides: 4;
+	--width: 1280px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--color-bg-dark);
+	width: 100%;
+	height: 100vh;
+	font-size: 3rem;
+	color: var(--text);
+}
+
+.hid {
+	visibility: hidden;
+}
+
+.container {
+	width: var(--width);
+	margin: 1rem auto;
+	height: 880px;
+}
