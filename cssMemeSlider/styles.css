@@ -30,3 +30,49 @@ body {
 	margin: 1rem auto;
 	height: 880px;
 }
+
+.meme-slider>input {
+	display: none;
+}
+
+.meme-slider {
+	display: grid;
+	grid-template-rows: 3fr 1fr;
+	grid-template-columns: 3fr 1fr;
+	grid-template-areas:
+		'meme-content meme-content'
+		'meme-description meme-control';
+	row-gap: 4rem;
+	width: 100%;
+	height: 100%;
+	position: static;
+	overflow: hidden;
+	background-color: var(--color-bg-dark);
+}
+
+.meme-slider-text {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+}
+
+.meme-slider-content {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+}
+
+.meme-slider-content {
+	grid-area: meme-content;
+}
+
+.meme-description {
+	display: flex;
+	width: 100% * var(--slides);
+	height: 100%;
+	transition: transform 1s ease;
+}

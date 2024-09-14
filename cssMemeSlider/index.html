@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mem Slider</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="hid">Slider</div>
     <div class="container">
-        
+        <div class="meme-slider" role="slider">
+            <input type="radio" id="r1" name="meme-control" checked="checked" />
+            <input type="radio" id="r2" name="meme-control" />
+            <input type="radio" id="r3" name="meme-control" />
+            <input type="radio" id="r4" name="meme-control" />
+            <div class="meme-slider-content">
+                <div class="meme-content">
+                   <div class="meme-slide meme-slide-1"></div>
+                   <div class="meme-slide meme-slide-2"></div>
+                   <div class="meme-slide meme-slide-3"></div>
+                   <div class="meme-slide meme-slide-4"></div>
+                </div>
+             </div>
+             <div class="meme-slider-text">
+                <div class="meme-description">
+                   <p class="meme-slide meme-slide-1">Never stop learning</p>
+                   <p class="meme-slide meme-slide-2">I'm best of the best</p>
+                   <p class="meme-slide meme-slide-3">Be optimistic</p>
+                   <p class="meme-slide meme-slide-4">Follow your dreams</p>
+                </div>
+             </div>
+        </div>
+
     </div>
 </body>
 </html>
