@@ -178,3 +178,48 @@ body {
 #r4:checked~.meme-control .meme-control-4 {
 	background-color: var(--border);
 }
+
+@media screen and (max-width: 720px) {
+    body {
+		font-size: 2rem;
+	}
+	.meme-slider {
+		grid-template-rows: 3fr 40px 40px;
+		grid-template-columns: 1fr;
+		grid-gap: 1rem;
+		grid-template-areas:
+			'meme-content'
+			'meme-control'
+			'meme-description';
+	}
+
+	.meme-control {
+		justify-content: center;
+	}
+
+	.meme-control label {
+		margin-right: 1.2rem;
+	}
+
+	.meme-control label:last-of-type {
+		margin-right: 0;
+	}
+
+	.meme-description .meme-slide {
+		text-align: center;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	body {
+		font-size: 1.6rem;
+	}
+
+	.meme-control {
+		margin-top: 20px;
+	}
+.meme-description {
+    margin-left: -40%;
+}
+}
