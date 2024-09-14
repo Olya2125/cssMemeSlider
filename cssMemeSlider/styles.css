@@ -92,3 +92,89 @@ body {
 	width: var(--width);
 	border-radius: 1rem;
 }
+
+.meme-content .meme-slide-1 {
+	background-image: url('/cssMemeSlider/images/1.jpg');
+}
+
+.meme-content .meme-slide-2 {
+	background-image: url('/cssMemeSlider/images/2.jpg');
+}
+
+.meme-content .meme-slide-3 {
+	background-image: url('/cssMemeSlider/images/3.jpg');
+}
+
+.meme-content .meme-slide-4 {
+	background-image: url('/cssMemeSlider/images/4.jpg');
+}
+
+.meme-slider-text {
+	grid-area: meme-description;
+}
+
+.meme-description .meme-slide {
+	display: inline-block;
+	width: var(--width);
+	height: 100%;
+	padding-right: 11rem;
+}
+
+.meme-control {
+	display: flex;
+	justify-content: space-around;
+	grid-area: meme-control;
+}
+
+
+.meme-control label {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	border: 1px solid var(--border);
+	background-color: var(--color-bg-dark);
+	transition: all 0.5s ease-out;
+	margin-right: 0.5rem;
+}
+
+.meme-control label:hover {
+	border: 1px solid var(--hover);
+	background-color: var(--hover);
+}
+
+#r1:checked~.meme-slider-content .meme-content,
+#r1:checked~.meme-slider-text .meme-description {
+	transform: translateX(0);
+}
+
+#r2:checked~.meme-slider-content .meme-content,
+#r2:checked~.meme-slider-text .meme-description {
+	transform: translateX(-1280px);
+}
+
+#r3:checked~.meme-slider-content .meme-content,
+#r3:checked~.meme-slider-text .meme-description {
+	transform: translateX(-2560px);
+}
+
+#r4:checked~.meme-slider-content .meme-content,
+#r4:checked~.meme-slider-text .meme-description {
+	transform: translateX(-3840px);
+}
+
+#r1:checked~.meme-control .meme-control-1 {
+	background-color: var(--border);
+}
+
+#r2:checked~.meme-control .meme-control-2 {
+	background-color: var(--border);
+}
+
+#r3:checked~.meme-control .meme-control-3 {
+	background-color: var(--border);
+}
+
+#r4:checked~.meme-control .meme-control-4 {
+	background-color: var(--border);
+}
