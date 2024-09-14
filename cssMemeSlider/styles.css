@@ -94,19 +94,19 @@ body {
 }
 
 .meme-content .meme-slide-1 {
-	background-image: url('/cssMemeSlider/images/1.jpg');
+	background-image: url('/1.jpg');
 }
 
 .meme-content .meme-slide-2 {
-	background-image: url('/cssMemeSlider/images/2.jpg');
+	background-image: url('/2.jpg');
 }
 
 .meme-content .meme-slide-3 {
-	background-image: url('/cssMemeSlider/images/3.jpg');
+	background-image: url('/3.jpg');
 }
 
 .meme-content .meme-slide-4 {
-	background-image: url('/cssMemeSlider/images/4.jpg');
+	background-image: url('/4.jpg');
 }
 
 .meme-slider-text {
