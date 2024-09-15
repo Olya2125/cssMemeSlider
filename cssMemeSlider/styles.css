@@ -93,21 +93,6 @@ body {
 	border-radius: 1rem;
 }
 
-.meme-content .meme-slide-1 {
-	background-image: url('/cssMemeSlider/1.jpg');
-}
-
-.meme-content .meme-slide-2 {
-	background-image: url('/cssMemeSlider/2.jpg');
-}
-
-.meme-content .meme-slide-3 {
-	background-image: url('/cssMemeSlider/3.jpg');
-}
-
-.meme-content .meme-slide-4 {
-	background-image: url('/cssMemeSlider/4.jpg');
-}
 
 .meme-slider-text {
 	grid-area: meme-description;
