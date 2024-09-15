@@ -164,6 +164,16 @@ body {
 	background-color: var(--border);
 }
 
+@media screen and (max-width: 768px) {
+	.meme-content .meme-slide {
+		width: calc(var(--width) - 80px);
+		margin: 0 40px;
+	  }
+	  .meme-description {
+		margin-left: 4%;
+	}
+}
+
 @media screen and (max-width: 720px) {
     body {
 		font-size: 2rem;
@@ -189,7 +199,9 @@ body {
 	.meme-control label:last-of-type {
 		margin-right: 0;
 	}
-
+	.meme-description {
+		margin-left: 0%;
+	}
 	.meme-description .meme-slide {
 		text-align: center;
 		padding: 0;
@@ -198,13 +210,17 @@ body {
 
 @media screen and (max-width: 320px) {
 	body {
-		font-size: 1.6rem;
+		font-size: 2.5rem;
 	}
 
 	.meme-control {
 		margin-top: 20px;
 	}
 .meme-description {
-    margin-left: -40%;
+    margin-left: -34%;
+}
+.meme-control label {
+	width: 1.6rem;
+	height: 1.6rem;
 }
 }
