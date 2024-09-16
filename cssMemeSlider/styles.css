@@ -4,7 +4,7 @@
 	--hover: #fff;
 	--color-bg-dark: rgb(24, 23, 23);
 	--slides: 4;
-	--width: 1280px;
+	--width: 80rem;
 }
 
 * {
@@ -28,7 +28,7 @@ body {
 .container {
 	width: var(--width);
 	margin: 1rem auto;
-	height: 880px;
+	height: 55rem;
 }
 
 .meme-slider>input {
@@ -125,8 +125,7 @@ cursor: pointer;
 }
 
 .meme-control label:hover {
-	background-color: var(--color-bg-dark);
-	border: 1px solid var(--border);
+	background-color: var(--border);
 	width: 1.6rem;
 	height: 1.6rem;
 }
@@ -138,39 +137,43 @@ cursor: pointer;
 
 #r2:checked~.meme-slider-content .meme-content,
 #r2:checked~.meme-slider-text .meme-description {
-	transform: translateX(-1280px);
+	transform: translateX(-80rem);
 }
 
 #r3:checked~.meme-slider-content .meme-content,
 #r3:checked~.meme-slider-text .meme-description {
-	transform: translateX(-2560px);
+	transform: translateX(-160rem);
 }
 
 #r4:checked~.meme-slider-content .meme-content,
 #r4:checked~.meme-slider-text .meme-description {
-	transform: translateX(-3840px);
+	transform: translateX(-240rem);
 }
 
 #r1:checked~.meme-control .meme-control-1 {
-	background-color: var(--border);
+	background-color: var(--color-bg-dark);
+	border: 0.063rem solid var(--border);
 }
 
 #r2:checked~.meme-control .meme-control-2 {
-	background-color: var(--border);
+	background-color: var(--color-bg-dark);
+	border: 0.063rem solid var(--border);
 }
 
 #r3:checked~.meme-control .meme-control-3 {
-	background-color: var(--border);
+	background-color: var(--color-bg-dark);
+	border: 0.063rem solid var(--border);
 }
 
 #r4:checked~.meme-control .meme-control-4 {
-	background-color: var(--border);
+	background-color: var(--color-bg-dark);
+	border: 0.063rem solid var(--border);
 }
 
 @media screen and (max-width: 768px) {
 	.meme-content .meme-slide {
-		width: calc(var(--width) - 80px);
-		margin: 0 40px;
+		width: calc(var(--width) - 5rem);
+		margin: 0 2.5rem;
 	  }
 	  .meme-description {
 		margin-left: 4%;
@@ -182,7 +185,7 @@ cursor: pointer;
 		font-size: 2rem;
 	}
 	.meme-slider {
-		grid-template-rows: 3fr 40px 40px;
+		grid-template-rows: 3fr 2.5rem 2.5rem;
 		grid-template-columns: 1fr;
 		grid-gap: 1rem;
 		grid-template-areas:
@@ -217,7 +220,7 @@ cursor: pointer;
 	}
 
 	.meme-control {
-		margin-top: 20px;
+		margin-top: 1.25rem;
 	}
 .meme-description {
     margin-left: -34%;
